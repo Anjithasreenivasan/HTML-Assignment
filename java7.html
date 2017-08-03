@@ -1,0 +1,72 @@
+<html>
+<head>
+	<script languge="javascript">
+function msg(){
+	name=document.frm_reg.cus.value;
+	if(name==""){
+		alert("plz enter your name");
+		return false;
+	}
+	name=document.frm_reg.pass.value;
+	if(name==""){
+		alert("plz enter your password");
+	return false;}
+	name=document.frm_reg.phone.value;
+	if(name==""){
+		alert("plz enter your telephone");
+	return false;}
+	name=document.frm_reg.address.value;
+	if(name==""){
+		alert("plz enter your address");
+	return false;}return false;
+}
+	</script>
+</head>
+<body>
+<form name="frm_reg">
+<table align="center">
+	<tr><td colspan="2"><h1 align="center"<b> Customer Registration</b></h1></td></tr>
+	<tr>
+	<td>Customer Name:</td><td><input type="text" name="cus"</td>
+	</tr>
+	<tr>
+	<td>Password:</td><td><input type="text" name="pass"</td>
+	</tr>
+	<tr>
+		<td>
+			gender:<input type="radio" name="gender" value="male">male<input type="radio" name="gender" value="male">female
+		</td>
+
+	</tr>
+	<tr>
+		<td>
+			Address:
+		</td>
+		<td><textarea rows="5" cols="20" name="address"></textarea></td>
+	</tr>
+		<tr>
+	<td>Telephone No:</td><td><input type="text" name="phone"></td>
+	</tr>
+	<tr><td></td></tr>
+	<tr>
+		<td>
+			<form>
+				Hobbies:</td>
+				<td>
+					<select name="hob">
+						<option>reading</option>
+						<option>writing</option>
+					</select>
+
+					</td>
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="submit" value="submit" onClick="return msg()">
+		</td></tr>
+</table>
+</form>
+</body>
+</html>
